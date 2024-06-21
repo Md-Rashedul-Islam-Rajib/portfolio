@@ -6,6 +6,7 @@ import '../../../App.scss'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "react-loaders";
+import ParticleComponent from "../../../components/ParticleComponent";
 AOS.init();
 
 const About = () => {
@@ -69,6 +70,7 @@ const About = () => {
 
 
             </div>
+            <ParticleComponent />
             <Loader type="pacman" />
         </div>
     );

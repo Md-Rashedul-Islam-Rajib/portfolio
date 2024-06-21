@@ -10,9 +10,9 @@ const Home = () => {
     const nameArray =['I','\'','m', ' ','R','a','s','h','e','d','u','l',' ','I','s','l','a','m'];
     const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r',' ']
     return (
-        <div className='pl-64 flex items-center'>
+        <div className='pl-64 flex items-center '>
      
-            <div className="text-white text-7xl font-bold">
+            <div className="text-white text-7xl font-bold font-helvetica-neue">
             <h1>{
                 greetArray?.map((letter,idx)=> <span 
                 data-aos="zoom-out"
