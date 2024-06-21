@@ -1,5 +1,6 @@
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SiTailwindcss } from "react-icons/si";
 import './index.scss'
 import '../../../App.scss'
 import AOS from "aos";
@@ -43,7 +44,8 @@ const About = () => {
             <div className="stage-cube-content">
                 <div className="cubeSpinner">
                 <div className="face1">
-                    <FontAwesomeIcon icon={faNodeJs} color="#7AA834"></FontAwesomeIcon>
+                    <SiTailwindcss className="text-[#38BDF8]" />
+                    {/* <FontAwesomeIcon icon={SiTailwindcss} color="#7AA834"></FontAwesomeIcon> */}
                     </div>
                     <div className="face2">
                     <FontAwesomeIcon className="-rotate-90" icon={faHtml5} color="#f06529"></FontAwesomeIcon>

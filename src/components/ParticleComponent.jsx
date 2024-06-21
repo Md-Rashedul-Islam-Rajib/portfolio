@@ -1,17 +1,28 @@
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import particlesConfig from '../assets/particlesjs-config.json'; 
-
+import particlesConfig from '../../public/particlesjs-config.json'
+import { useCallback } from 'react';
+import { loadSlim } from "tsparticles-slim";
 const ParticleComponent = () => {
 
-    const particlesInit = async (main) => {
-        // You can initialize the tsParticles instance (main) here, adding custom shapes or presets
-        await loadFull(main);
-      };
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    //await loadFull(engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
+    // const particlesInit = async (main) => {
+    //     // You can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    //     await loadFull(main);
+    //   };
     
-      const particlesLoaded = (container) => {
-        console.log(container);
-      };
+    //   const particlesLoaded = (container) => {
+    //     console.log(container);
+    //   };
 
     return (
         <Particles
@@ -19,14 +30,7 @@ const ParticleComponent = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={particlesConfig}
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: -1,
-        }}  // Use the imported JSON configuration
+         
       />
     );
 };

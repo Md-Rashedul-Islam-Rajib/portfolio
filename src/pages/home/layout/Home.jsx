@@ -11,6 +11,7 @@ const Home = () => {
     const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r',' ']
     return (
         <div className='pl-64 flex items-center'>
+     
             <div className="text-white text-7xl font-bold">
             <h1>{
                 greetArray?.map((letter,idx)=> <span 
@@ -40,6 +41,7 @@ const Home = () => {
                 ))}</h1>
             
         </div>
+        <ParticleComponent />
         <Loader type="pacman" />
         </div>
     );
