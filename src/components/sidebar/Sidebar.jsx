@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import { FaEnvelope, FaHome, FaUser, FaProjectDiagram } from 'react-icons/fa'
+import { FaEnvelope, FaHome, FaUser, FaProjectDiagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 
 const Sidebar = () => {
@@ -70,6 +70,19 @@ const Sidebar = () => {
           </div>
         </NavLink>
       </nav>
+
+      {/* <section className='flex flex-col gap-8 mb-48'>
+        <a href="https://github.com/Md-Rashedul-Islam-Rajib"
+        className={({isActive})=> `${isActive? 'text-[#ffd700]' : 'text-white'}`}
+        >
+        <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/rashedul-islam-rajib/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BIpNG1NngTYaVQIA2iHEJyg%3D%3D"
+        className={({isActive})=> `${isActive? 'text-[#ffd700]' : 'text-white'}`}
+        >
+        <FaLinkedin />
+        </a>
+      </section> */}
     </div>
   )
 }
