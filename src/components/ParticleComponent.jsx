@@ -30,6 +30,7 @@ const ParticleComponent = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={particlesConfig}
+        className='relative -z-10'
          
       />
     );

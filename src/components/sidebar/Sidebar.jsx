@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-
-import { FaEnvelope, FaHome, FaUser } from 'react-icons/fa'
+import { FaEnvelope, FaHome, FaUser, FaProjectDiagram } from 'react-icons/fa'
 
 
 const Sidebar = () => {
@@ -35,9 +34,8 @@ const Sidebar = () => {
       >
         <NavLink
         className={({ isActive }) =>
-            `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
-          }
-       
+          `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
+        }
           to="/"
         >
           <FaHome
@@ -51,6 +49,15 @@ const Sidebar = () => {
           to="/about"
         >
           <FaUser ></FaUser> <span className='ml-4'>About</span>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
+          }
+          to="/projects"
+        >
+          <FaProjectDiagram />
+          <span className='ml-4'>Projects</span>
         </NavLink>
         <NavLink
           className={({ isActive }) =>
