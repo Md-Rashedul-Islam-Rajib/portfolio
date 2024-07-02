@@ -1,6 +1,9 @@
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
+import Lottie from 'lottie-react'
+import contact from '../../../assets/contact.json'
+import ParticleComponent from '../../../components/ParticleComponent'
 
 const Contact = () => {
   const {
@@ -38,9 +41,67 @@ const Contact = () => {
       })
   }
 
+  const contactArray = [
+    'G',
+    'e',
+    't',
+    ' ',
+    'I',
+    'n',
+    ' ',
+    'T',
+    'o',
+    'u',
+    'c',
+    'h',
+  ]
   return (
-    <div className="grid grid-cols-2 justify-between w-full">
-      <div></div>
+    <div className="grid grid-cols-2 gap-6 w-full">
+      <div className="flex items-center justify-center">
+        <div className="pl-64 flex items-center">
+          <div>
+      {/* <Lottie className="w-96" animationData={contact} loop={true} /> */}
+            <h1 className="text-[#ffd700] text-7xl font-bold font-helvetica-neue">
+              {contactArray?.map((letter, idx) => (
+                <span
+                  data-aos="zoom-out"
+                  data-aos-delay={`${idx * 100}`}
+                  data-aos-duration={`${idx * 100}`}
+                  key={idx}
+                >
+                  {letter}
+                </span>
+              ))}
+            </h1>
+            <div className="text-white text-3xl flex flex-col gap-6 mt-6  font-light font-helvetica-neue">
+              <p
+                data-aos="fade-in"
+                data-aos-delay="900"
+                data-aos-duration="100"
+              >
+                Phone : +8801303050669
+              </p>
+              <p
+                data-aos="fade-in"
+                data-aos-delay="1100"
+                data-aos-duration="100"
+              >
+                Email : rajib5570@gmail.com
+              </p>
+              <p
+                data-aos="fade-in"
+                data-aos-delay="1300"
+                data-aos-duration="100"
+              >
+                Address : Pathantuli, Siddirganj, Narayanganj, Dhaka, Bangladesh
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
 
       <div>
         <div className="text-4xl font-helvetica-neue flex items-center h-full">
@@ -83,7 +144,9 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        
       </div>
+      <ParticleComponent />
     </div>
   )
 }

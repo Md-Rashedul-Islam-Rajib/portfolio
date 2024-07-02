@@ -1,12 +1,6 @@
 .stage-cube-content{
     width: 50%;
     height: 100%;
-    top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
 }
 
 .cubeSpinner{
@@ -50,6 +44,34 @@
         transform: rotateY(90deg) translateZ(100px);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .cubeSpinner div {
+        width: 100px; /* Reduced by half */
+        height: 100px; /* Reduced by half */
+        font-size: 50px; /* Reduced by half */
+    }
+
+    .cubeSpinner .face1 {
+        transform: translateZ(50px); /* Reduced by half */
+    }
+    .cubeSpinner .face2 {
+        transform: rotateX(90deg) translateZ(50px); /* Reduced by half */
+    }
+    .cubeSpinner .face3 {
+        transform: rotateY(90deg) rotateX(-90deg) translateZ(50px); /* Reduced by half */
+    }
+    .cubeSpinner .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(50px); /* Reduced by half */
+    }
+    .cubeSpinner .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px); /* Reduced by half */
+    }
+    .cubeSpinner .face6 {
+        transform: rotateY(90deg) translateZ(50px); /* Reduced by half */
+    }
+}
+
 @keyframes spincube {
     to {
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
