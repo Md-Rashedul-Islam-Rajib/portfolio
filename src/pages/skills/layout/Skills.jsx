@@ -42,7 +42,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1000"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
@@ -56,7 +56,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1100"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
@@ -82,7 +82,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1000"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
@@ -95,7 +95,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1100"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
@@ -121,7 +121,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1000"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
@@ -134,7 +134,7 @@ const Skills = () => {
 
         <div
           data-aos="fade-in"
-          data-aos-delay="900"
+          data-aos-delay="1100"
           data-aos-duration="100"
           className="flex items-center gap-6 bg-slate-800 p-4 rounded-xl"
         >
