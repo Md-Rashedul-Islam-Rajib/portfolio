@@ -4,6 +4,8 @@ import Swal from 'sweetalert2'
 import Lottie from 'lottie-react'
 import contact from '../../../assets/contact.json'
 import ParticleComponent from '../../../components/ParticleComponent'
+import { FaDiscord, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   const {
@@ -94,6 +96,20 @@ const Contact = () => {
               >
                 Address : Pathantuli, Siddirganj, Narayanganj, Dhaka, Bangladesh
               </p>
+              <div className='text-4xl flex gap-6 z-50'>
+                <Link to='https://www.linkedin.com/in/rashedul-islam-rajib'>
+                <FaLinkedin className='text-[#126bc4]' />
+                </Link>
+                <Link to='https://github.com/Md-Rashedul-Islam-Rajib'>
+                <FaGithub  className='text-[#16181f]' />
+                </Link>
+                <Link to='https://www.facebook.com/Rashedulislamrajj'>
+                <FaFacebook  className='text-[#0866ff]' />
+                </Link>
+                <Link to='https://discordapp.com/users/rashedul_rajj'>
+                <FaDiscord  className='text-[#5662f6]' />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
