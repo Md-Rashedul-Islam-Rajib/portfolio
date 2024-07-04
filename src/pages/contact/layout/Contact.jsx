@@ -96,7 +96,11 @@ const Contact = () => {
               >
                 Address : Pathantuli, Siddirganj, Narayanganj, Dhaka, Bangladesh
               </p>
-              <div className='text-4xl flex gap-6 z-50'>
+              <div
+              data-aos="fade-in"
+              data-aos-delay="1500"
+              data-aos-duration="100"
+              className='text-4xl flex gap-6 z-50'>
                 <Link to='https://www.linkedin.com/in/rashedul-islam-rajib'>
                 <FaLinkedin className='text-[#126bc4]' />
                 </Link>
