@@ -1,5 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import { FaEnvelope, FaHome, FaUser, FaProjectDiagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { GiSkills } from 'react-icons/gi'
+import { IoSchool } from 'react-icons/io5'
 
 
 const Sidebar = () => {
@@ -28,13 +30,13 @@ const Sidebar = () => {
             text-center
             h-full
             w-full
-            text-xl
+            md:text-xl
             pb-60
             "
       >
         <NavLink
         className={({ isActive }) =>
-          `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
+          `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mt-32 md:mt-0 mb-6 transition-all duration-300 ease-out `
         }
           to="/"
         >
@@ -54,10 +56,27 @@ const Sidebar = () => {
           className={({ isActive }) =>
             `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
           }
+          to="/skills"
+        >
+          <GiSkills /> <span className='ml-4'>Skills</span>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
+          }
           to="/projects"
         >
           <FaProjectDiagram />
           <span className='ml-4'>Projects</span>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `block py-1 px-2 ${isActive ? 'text-[#ffd700]' : 'text-white'} flex justify-center mb-6 transition-all duration-300 ease-out `
+          }
+          to="/education"
+        >
+          <IoSchool />
+          <span className='ml-4'>Education</span>
         </NavLink>
         <NavLink
           className={({ isActive }) =>

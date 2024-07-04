@@ -1,13 +1,4 @@
-// import {
-//   faCss3,
-//   faGitAlt,
-//   faHtml5,
-//   faJsSquare,
-//   faReact,
-// } from '@fortawesome/free-brands-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { SiTailwindcss } from 'react-icons/si'
-// import './index.scss'
+
 import '../../../App.scss'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -19,9 +10,9 @@ AOS.init()
 const About = () => {
   const aboutArray = ['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']
   return (
-    <div className="md:pl-32 flex flex-col items-center justify-between md:flex-row md:justify-between md:items-center">
+    <div className="md:pl-32 flex flex-col items-center justify-between md:flex-row md:justify-between md:items-center ">
      
-        <div className='mt-20 md:mt-0'>
+        <div className='mt-20 md:mt-8'>
           <h1 className="text-[#ffd700] text-xl text-center md:text-start md:text-3xl lg:text-5xl font-bold font-helvetica-neue">
             {aboutArray?.map((letter, idx) => (
               <span

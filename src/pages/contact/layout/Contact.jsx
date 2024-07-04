@@ -99,14 +99,14 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center z-50'>
         <div className="text-xl font-helvetica-neue flex items-center h-full">
           <form onSubmit={handleSubmit(onSubmit)}>
             <label className="input input-bordered flex items-center gap-2 mb-2 md:mb-4">
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 text-black"
                 {...register('Name')}
               />
             </label>
@@ -116,7 +116,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
-                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 text-black"
                 {...register('email', { required: true })}
               />
             </label>
@@ -127,7 +127,7 @@ const Contact = () => {
             <label className="input input-bordered flex items-center gap-2 mb-2 md:mb-4">
               <textarea
                 id="bio"
-                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 text-black"
                 placeholder="Message"
                 {...register('message')}
               ></textarea>
