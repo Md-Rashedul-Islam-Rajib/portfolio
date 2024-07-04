@@ -85,7 +85,7 @@ const Projects = () => {
     };
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-24 my-32'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 px-24 mt-16'>
         {projectData?.map((project) => (
             <div className='z-30 relative' key={project.id}>
                 <div className='flex items-center gap-4 mb-10'>
@@ -121,7 +121,7 @@ const Projects = () => {
 const Modal = ({ projectName, logo, type, features, live, clients, tech, server, onClose }) => {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 font-coolvetica z-50">
-            <div className="bg-white rounded-lg p-16 relative text-2xl">
+            <div className="bg-white rounded-lg p-10 relative text-lg">
                 <button
                     className="absolute top-0 right-0 text-gray-600 hover:text-gray-900"
                     onClick={onClose}
@@ -132,9 +132,9 @@ const Modal = ({ projectName, logo, type, features, live, clients, tech, server,
                 </button>
                 <div className='flex items-center gap-4'>
                     <img className='w-12' src={logo} alt={projectName} />
-                    <span className="text-4xl">{projectName} (Full Stack)</span>
+                    <span className="text-2xl">{projectName} (Full Stack)</span>
                 </div>
-                <h2 className='text-3xl ml-16'>{type}</h2>
+                <h2 className='text-xl ml-16'>{type}</h2>
                 <div className='border-b-2 border-black my-8'></div>
                 <h1>Top Features:</h1>
                 <ul>

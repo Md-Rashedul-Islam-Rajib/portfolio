@@ -56,12 +56,11 @@ const Contact = () => {
     'h',
   ]
   return (
-    <div className="grid grid-cols-2 gap-6 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-6 md:pt-6 w-full h-full lg:pt-56">
       <div className="flex items-center justify-center">
-        <div className="pl-64 flex items-center">
+        <div className="pl-32 flex items-center">
           <div>
-      {/* <Lottie className="w-96" animationData={contact} loop={true} /> */}
-            <h1 className="text-[#ffd700] text-7xl font-bold font-helvetica-neue">
+            <h1 className="text-[#ffd700] md:text-2xl lg:text-4xl font-bold font-helvetica-neue">
               {contactArray?.map((letter, idx) => (
                 <span
                   data-aos="zoom-out"
@@ -73,7 +72,7 @@ const Contact = () => {
                 </span>
               ))}
             </h1>
-            <div className="text-white text-3xl flex flex-col gap-6 mt-6  font-light font-helvetica-neue">
+            <div className="text-white md:text-lg md:gap-4 md:mt-4 lg:text-xl flex flex-col lg:gap-6 lg:mt-6  font-light font-helvetica-neue">
               <p
                 data-aos="fade-in"
                 data-aos-delay="900"
@@ -95,22 +94,19 @@ const Contact = () => {
               >
                 Address : Pathantuli, Siddirganj, Narayanganj, Dhaka, Bangladesh
               </p>
-              
             </div>
           </div>
         </div>
-
-        
       </div>
 
-      <div>
-        <div className="text-4xl font-helvetica-neue flex items-center h-full">
+      <div className='flex justify-center'>
+        <div className="text-xl font-helvetica-neue flex items-center h-full">
           <form onSubmit={handleSubmit(onSubmit)}>
             <label className="input input-bordered flex items-center gap-2 mb-2 md:mb-4">
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 {...register('Name')}
               />
             </label>
@@ -120,7 +116,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
-                className="w-full py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 {...register('email', { required: true })}
               />
             </label>
@@ -131,20 +127,19 @@ const Contact = () => {
             <label className="input input-bordered flex items-center gap-2 mb-2 md:mb-4">
               <textarea
                 id="bio"
-                className="w-full py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                className="w-full lg:py-2 placeholder:pl-6 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 placeholder="Message"
                 {...register('message')}
               ></textarea>
             </label>
 
             <div className="flex justify-center">
-              <button className="btn bg-neutral-900 text-white w-1/2 rounded-xl p-2">
+              <button className="btn bg-neutral-900 text-white w-1/2 rounded-xl lg:p-2">
                 Submit
               </button>
             </div>
           </form>
         </div>
-        
       </div>
       <ParticleComponent />
     </div>

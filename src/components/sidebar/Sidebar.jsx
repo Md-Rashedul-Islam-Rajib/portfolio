@@ -13,7 +13,7 @@ const Sidebar = () => {
     z-20
     "
     >
-      <Link className="px-2 flex flex-col items-center justify-center mt-32 text-white" to="/">
+      <Link className="px-2 flex flex-col items-center justify-center md:mb-24 md:mt-8 lg:mt-32 text-white" to="/">
         <h1
           className=" text-4xl font-bold h-auto"
           
@@ -28,7 +28,7 @@ const Sidebar = () => {
             text-center
             h-full
             w-full
-            text-3xl
+            text-xl
             pb-60
             "
       >

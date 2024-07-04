@@ -11,7 +11,7 @@ const Home = () => {
     
     return (
         <div className='flex items-center justify-center min-h-screen px-4 md:px-8 lg:px-16 xl:px-32'>
-            <div className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-helvetica-neue text-center md:text-left">
+            <div className="text-white text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold font-helvetica-neue text-center md:text-left">
                 <h1>
                     {greetArray?.map((letter,idx)=> (
                         <span 

@@ -19,10 +19,10 @@ AOS.init()
 const About = () => {
   const aboutArray = ['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']
   return (
-    <div className="md:pl-32 lg:pl-64 flex flex-col items-center justify-between md:flex-row md:justify-between md:items-center">
+    <div className="md:pl-32 flex flex-col items-center justify-between md:flex-row md:justify-between md:items-center">
      
         <div className='mt-20 md:mt-0'>
-          <h1 className="text-[#ffd700] text-3xl text-center md:text-start lg:text-7xl font-bold font-helvetica-neue">
+          <h1 className="text-[#ffd700] text-xl text-center md:text-start md:text-3xl lg:text-5xl font-bold font-helvetica-neue">
             {aboutArray?.map((letter, idx) => (
               <span
                 data-aos="zoom-out"
@@ -34,19 +34,17 @@ const About = () => {
               </span>
             ))}
           </h1>
-          <div className="text-white lg:text-3xl flex flex-col gap-6 mt-6 mx-auto md:mx-0 w-4/5 md:w-3/5 font-light font-helvetica-neue">
+          <div className="text-white text-sm lg:text-xl flex flex-col gap-6 mt-6 mx-auto md:mx-0 w-4/5 md:w-3/5 font-light font-helvetica-neue">
             <p data-aos="fade-in" data-aos-delay="900" data-aos-duration="100">
               I'm very ambitious front-end developer looking for a role in
               established IT/Software company with the opportunity to work with
               the latest technologies on challenging and diverse projects
             </p>
             <p data-aos="fade-in" data-aos-delay="1000" data-aos-duration="100">
-              I'm quietly confident, naturally curious and perpetually working
-              on improving my chops designs problem at a time
+            I have gained solid experience in web development using the MERN stack. My goal is to leverage my skills and continue learning to build robust, scalable, and user-friendly web applications
             </p>
             <p data-aos="fade-in" data-aos-delay="1100" data-aos-duration="100">
-              If I need to define myself in one sentence that would be a family
-              person, a sports fanatic and tech-obsessed
+            I am driven by a desire to create impactful digital solutions and am committed to continuous improvement and innovation.
             </p>
             <a
               href="https://drive.google.com/uc?export=download&id=1JMWLqB7wwqpGcLlqsy0QJ1fvJso0usKL"
