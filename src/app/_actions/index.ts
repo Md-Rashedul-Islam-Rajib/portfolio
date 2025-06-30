@@ -5,7 +5,8 @@
 
 export const getAllSkills = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/skills`, {
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/skills`,
+    const res = await fetch(`https://folio-apis.vercel.app/skills`, {
       method: "GET",
       cache: "no-store",
       next: { tags: ["SKILLS"] },
@@ -31,7 +32,8 @@ export const getAllSkills = async () => {
 
 export const getAllProjects = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/projects`, {
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/projects`,
+    const res = await fetch(`https://folio-apis.vercel.app/projects`, {
       method: "GET",
       cache: "no-store",
       next: {
@@ -58,7 +60,8 @@ export const getAllProjects = async () => {
 
 export const getAllBlogs = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/blogs`, {
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/blogs`,
+    const res = await fetch(`https://folio-apis.vercel.app/blogs`, {
       method: "GET",
       cache: "no-store",
       next: {

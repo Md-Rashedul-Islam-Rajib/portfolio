@@ -9,6 +9,7 @@ import Footer from "./_components/Footer";
 
 export default async function HomePage() {
   const { data: skills } = await getAllSkills();
+  console.log("Skills:", skills);
   const { data: projects } = await getAllProjects();
   const { data: blogs } = await getAllBlogs();
 
