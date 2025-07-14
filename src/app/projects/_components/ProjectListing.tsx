@@ -2,7 +2,8 @@ import ProjectCard from '@/app/_components/ProjectCard';
 import { TProject } from '@/app/_types'
 import React from 'react'
 
-const ProjectListing = ({projects}: {projects: TProject[]}) => {
+const ProjectListing = ({ projects }: { projects: TProject[] }) => {
+  console.log("Projects:", projects);
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
