@@ -1,12 +1,13 @@
 export const getAllProjects = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/projects`, {
-      method: "GET",
-      cache: "no-store",
-      next: {
-        tags: ["PROJECTS"],
-      },
-    });
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER!}/projects`,
+      const res = await fetch(`https://folio-apis.vercel.app/projects`, {
+        method: "GET",
+        cache: "no-store",
+        next: {
+          tags: ["PROJECTS"],
+        },
+      });
 
     if (!res.ok) {
       console.error("Failed to fetch projects:", res.statusText);
