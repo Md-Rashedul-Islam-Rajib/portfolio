@@ -1,3 +1,4 @@
+'use client'
 import ProjectCard from '@/app/_components/ProjectCard';
 import { TProject } from '@/app/_types'
 import React from 'react'
